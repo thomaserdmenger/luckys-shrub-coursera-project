@@ -45,6 +45,7 @@ nav li {
 nav a {
   text-decoration: none;
   color: var(--color-accent);
+  /* font-weight: 800; */
 }
 
 /* main */
@@ -68,7 +69,19 @@ nav a {
 /* footer */
 
 .grid-container--footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid black;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container--footer img {
+  max-height: 50px;
+  margin-right: 1rem;
+}
+
+.grid-container--footer span {
+  display: inline-block;
+  color: var(--color-accent);
+  margin-left: 1rem;
 }
