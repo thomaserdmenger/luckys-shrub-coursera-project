@@ -5,3 +5,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+  margin: 3rem 5%;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  height: 200px;
+}
+
+/* navigation */
+
+/* main */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  gap: 1px;
+  background-color: black;
+}
+
+.box {
+  background-color: white;
+}
+
+.banner {
+  grid-column: 1 / span 3;
+}
+
+/* footer */
+
+.grid-container--footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid black;
+}
