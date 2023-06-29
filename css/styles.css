@@ -1,3 +1,7 @@
+:root {
+  --color-accent: hsl(175, 56%, 34%);
+}
+
 *,
 *::before,
 *::after {
@@ -23,6 +27,25 @@ header img {
 }
 
 /* navigation */
+
+nav {
+  margin: 5rem auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+nav li {
+  flex: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-accent);
+}
 
 /* main */
 
