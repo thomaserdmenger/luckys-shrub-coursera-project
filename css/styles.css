@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@keyframes bouncingPromotion {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.01);
+  }
+
+  50% {
+    transform: scale(0.99);
+  }
+
+  75% {
+    transform: scale(1.01);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 :root {
   --color-accent: hsl(175, 56%, 34%);
 }
@@ -27,28 +49,6 @@ footer {
 }
 
 /* header */
-
-@keyframes bouncingPromotion {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(1.01);
-  }
-
-  50% {
-    transform: scale(0.99);
-  }
-
-  75% {
-    transform: scale(1.01);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 
 header {
   display: flex;
@@ -160,20 +160,28 @@ article figcaption {
 }
 
 article a {
-  text-decoration: none;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 25px;
+  bottom: 5%;
   color: var(--color-accent);
   cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.5rem 2rem;
-  border-radius: 25px;
-  background-color: hsla(0, 0%, 100%, 0.8);
   display: flex;
+  font-size: 1rem;
+  font-weight: 400;
   justify-content: center;
-  align-items: center;
+  left: 50%;
+  padding: 0.5rem 3rem;
+  position: absolute;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+article a:hover {
+  background-color: var(--color-accent);
+  color: white;
+  transition: all 1.5s;
 }
 
 /* footer */
