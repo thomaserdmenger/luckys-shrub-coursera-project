@@ -94,8 +94,8 @@ nav a {
   background-color: white;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  gap: 5px;
   margin-bottom: 5rem;
+  gap: 5px;
 }
 
 .box {
@@ -179,20 +179,20 @@ nav a {
 
 /* main | section */
 
-article {
+.grid-container article {
   position: relative;
 }
 
-article img {
+.grid-container article img {
   width: 100%;
   max-height: 500px;
 }
 
-article figcaption {
+.grid-container article figcaption {
   text-align: center;
 }
 
-article a {
+.grid-container article a {
   align-items: center;
   background-color: hsla(0, 0%, 100%, 0.8);
   border-radius: 25px;
@@ -211,7 +211,7 @@ article a {
   z-index: 1;
 }
 
-article a:hover {
+.grid-container article a:hover {
   background-color: var(--color-accent);
   color: white;
   transition: all 1.5s;
@@ -238,4 +238,62 @@ article a:hover {
 
 .grid-container--footer a {
   cursor: pointer;
+}
+
+/* about | main */
+
+.grid-container--about {
+  display: grid;
+  grid-template-columns: minmax(auto, 800px);
+  grid-template-rows: repeat(4, auto);
+  /* margin-bottom: 5rem; */
+  column-gap: 5px;
+  background-color: white;
+}
+
+.image-container--about {
+  overflow: hidden;
+  max-height: 500px;
+  margin-bottom: 1rem;
+}
+
+.grid-container--about img {
+  max-width: 100%;
+  height: auto;
+}
+
+.jason {
+  grid-row: 2 / span 1;
+}
+
+.grid-container--about p {
+  padding: 0 0.5rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.grid-container--about span {
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 825px) {
+  .grid-container--about {
+    grid-template-columns: repeat(2, minmax(100px, 800px));
+    grid-template-rows: auto 120px;
+  }
+
+  .image-container--about {
+    max-height: 800px;
+    max-width: 100%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-container--about img {
+    min-width: 80%;
+  }
 }
