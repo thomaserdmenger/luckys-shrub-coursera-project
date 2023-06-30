@@ -266,6 +266,16 @@ nav a {
   grid-row: 2 / span 1;
 }
 
+.maria a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.maria a:hover {
+  text-decoration: underline;
+}
+
 .grid-container--about p {
   padding: 0 0.5rem;
   line-height: 1.5;
