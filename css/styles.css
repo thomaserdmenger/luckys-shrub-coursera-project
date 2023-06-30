@@ -64,6 +64,30 @@ nav a {
 
 .banner {
   grid-column: 1 / span 3;
+  /* TODO: Decrease the hight in smaller solution  */
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  position: relative;
+}
+
+.banner a {
+  cursor: pointer;
+}
+
+.banner h2 {
+  position: absolute;
+  z-index: 1;
+  /* TODO: Change the percentage on smaller devices */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* footer */
