@@ -135,6 +135,13 @@ nav a {
   text-decoration: none;
 }
 
+.promoContent {
+  margin-top: 1rem;
+  font-weight: 200;
+  font-size: 1rem;
+  transition: all 1.5s;
+}
+
 @media only screen and (min-width: 825px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
