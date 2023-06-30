@@ -25,6 +25,28 @@ footer {
 
 /* header */
 
+@keyframes bouncingPromotion {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.01);
+  }
+
+  50% {
+    transform: scale(0.99);
+  }
+
+  75% {
+    transform: scale(1.01);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -62,7 +84,6 @@ nav a {
   background-color: white;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  /* TODO: Increase gap on larger devices */
   gap: 5px;
   margin-bottom: 5rem;
 }
@@ -72,13 +93,12 @@ nav a {
 }
 
 .banner {
-  /* grid-column: 1 / span 3; */
-  /* TODO: Decrease the hight in smaller solution  */
   max-height: 500px;
   overflow: hidden;
   position: relative;
   color: white;
   text-align: center;
+  animation: bouncingPromotion 1s ease-in-out;
 }
 
 .banner img {
@@ -89,7 +109,6 @@ nav a {
 .banner h2 {
   position: absolute;
   z-index: 1;
-  /* TODO: Change the percentage on smaller devices */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -105,7 +124,6 @@ nav a {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    /* grid-template-rows: 500px auto; */
   }
 
   .banner {
@@ -155,7 +173,6 @@ article a {
 /* footer */
 
 .grid-container--footer {
-  /* margin: 5rem auto; */
   display: flex;
   justify-content: center;
   align-items: center;
