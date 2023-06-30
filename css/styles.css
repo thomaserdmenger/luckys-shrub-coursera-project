@@ -202,3 +202,7 @@ article a:hover {
   color: var(--color-accent);
   margin-left: 1rem;
 }
+
+.grid-container--footer a {
+  cursor: pointer;
+}
