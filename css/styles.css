@@ -79,10 +79,7 @@ nav ul {
   list-style: none;
   display: flex;
   text-align: center;
-}
-
-nav li {
-  flex: 1;
+  justify-content: space-between;
 }
 
 nav a {
