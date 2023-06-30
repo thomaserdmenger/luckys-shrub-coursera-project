@@ -22,6 +22,16 @@
   }
 }
 
+@keyframes delayPromo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 :root {
   --color-accent: hsl(175, 56%, 34%);
 }
@@ -126,7 +136,8 @@ nav a {
   color: white;
   background-color: hsla(0, 0%, 100%, 0.2);
   border-radius: 25px;
-  transition: all 1.5s;
+  transition: color 1.5s, background-color 1.5s;
+  top: 53.5%;
 }
 
 .banner a {
@@ -137,9 +148,9 @@ nav a {
 
 .promoContent {
   margin-top: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
-  transition: all 1.5s;
+  animation: delayPromo 2s linear;
 }
 
 @media only screen and (min-width: 825px) {
