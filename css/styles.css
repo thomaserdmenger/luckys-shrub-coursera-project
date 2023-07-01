@@ -394,6 +394,10 @@ nav a {
   font-weight: 700;
 }
 
+.contact__form-text h2 {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (min-width: 825px) {
   .grid-container--contact {
     grid-template-columns: 1fr 1fr;
