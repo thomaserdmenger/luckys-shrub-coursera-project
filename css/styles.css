@@ -354,11 +354,14 @@ nav a {
 .contact__intro {
   line-height: 1.5;
   text-align: center;
+  margin: 1rem 0 0.5rem 0;
 }
 
 .contact__address {
   display: flex;
   flex-direction: column;
+  background-color: hsla(0, 0%, 95%, 1);
+  border-radius: 5px;
 }
 
 .contact__address div:nth-of-type(1) {
@@ -394,7 +397,7 @@ nav a {
 }
 
 .contact__form-text h2 {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .contact__form div {
@@ -459,5 +462,15 @@ nav a {
 
   .contact__intro {
     text-align: start;
+  }
+
+  .contact__address {
+    background-color: white;
+    border-radius: 0;
+    margin-top: 1.5rem;
+  }
+
+  .contact__form {
+    margin-top: 1rem;
   }
 }
