@@ -475,3 +475,33 @@ nav a {
     margin-top: 1rem;
   }
 }
+
+/* nursery */
+
+.nursery-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto repeat(5, auto);
+  gap: 5px;
+  margin-bottom: 4rem;
+}
+
+.nursery-container img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 825px) {
+  .nursery-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto repeat(2, auto);
+  }
+
+  h1 {
+    grid-column: 1 / span 2;
+  }
+
+  .contact-banner {
+    overflow: hidden;
+    grid-column: 1 / span 2;
+  }
+}
