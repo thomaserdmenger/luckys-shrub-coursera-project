@@ -433,6 +433,7 @@ nav a {
   color: var(--color-accent);
   border: 2px solid var(--color-accent);
   background-color: white;
+  margin-bottom: 4rem;
 }
 
 .contact__form button:hover {
