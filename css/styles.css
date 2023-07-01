@@ -534,3 +534,41 @@ nav a {
     grid-column: 1 / span 2;
   }
 }
+
+/* promotion */
+
+.promotion-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  margin-bottom: 4rem;
+  gap: 5px;
+}
+
+.promotion-container div {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.promotion-container img {
+  width: 100%;
+}
+
+.promotion-container p {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 825px) {
+  .promotion-container p {
+    font-size: 2rem;
+  }
+}
