@@ -298,6 +298,8 @@ nav a {
     max-width: 100%;
   }
 
+  /* TODO: Center main content without impact on subpages */
+  /* 
   main {
     display: flex;
     justify-content: center;
@@ -305,5 +307,64 @@ nav a {
 
   .grid-container--about img {
     min-width: 80%;
+  } */
+}
+
+/* contact */
+
+.grid-container--contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.box--contact {
+  background-color: lightblue;
+}
+
+.contact__banner {
+  overflow: hidden;
+  position: relative;
+}
+
+.contact__banner img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.contact__banner .contact__heading {
+  color: var(--color-accent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 25px;
+  padding: 0 1rem;
+}
+
+.contact__banner h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 825px) {
+  .grid-container--contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 1fr 1fr;
+  }
+
+  .contact__banner {
+    grid-column: 1 / span 2;
+  }
+
+  .contact__banner .contact__heading {
+    padding: 0.5rem 2rem;
+  }
+
+  .contact__banner h1 {
+    font-size: 2.5rem;
   }
 }
