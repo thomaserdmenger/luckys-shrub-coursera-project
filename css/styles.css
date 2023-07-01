@@ -320,12 +320,14 @@ nav a {
 }
 
 .box--contact {
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  padding: 1rem;
 }
 
 .contact__banner {
   overflow: hidden;
   position: relative;
+  padding: 0;
 }
 
 .contact__banner img {
@@ -350,6 +352,48 @@ nav a {
   font-weight: 500;
 }
 
+.contact__intro {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contact__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__address div:nth-of-type(1) {
+  font-weight: 700;
+}
+
+.contact__address div {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.contact__address i {
+  margin-right: 1rem;
+}
+
+.contact__address a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact__address a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 1s;
+}
+
+.contact__address div:last-of-type {
+  margin-top: 1rem;
+}
+
+.contact__address div:last-of-type span {
+  font-weight: 700;
+}
+
 @media only screen and (min-width: 825px) {
   .grid-container--contact {
     grid-template-columns: 1fr 1fr;
@@ -366,5 +410,9 @@ nav a {
 
   .contact__banner h1 {
     font-size: 2.5rem;
+  }
+
+  .contact__intro {
+    text-align: start;
   }
 }
