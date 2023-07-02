@@ -93,6 +93,11 @@ nav a {
   color: var(--color-accent);
 }
 
+nav li:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
 /* main | banner */
 
 .grid-container {
